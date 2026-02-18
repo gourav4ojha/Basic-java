@@ -1,5 +1,7 @@
 package classArraysLogicalProgramsIn;
 
+import java.util.Arrays;
+
 public class Seperate_Zeroes_Ones {
 
 	public static void main(String[] args) {
@@ -8,13 +10,14 @@ public class Seperate_Zeroes_Ones {
 		int cnt=0;
 		for (int i = 0; i < a.length; i++) {
 			if(a[i]==0) {
-				System.out.print(a[i]+" ");
-				cnt++;
+				a[cnt++] = 0;
+				
 			}
 		}
 		for (int i = cnt; i < a.length; i++) {
-			System.out.print("1"+" ");
+			a[cnt++] = 1;
 		}
+		System.out.println(Arrays.toString(a));
 
 	}
 

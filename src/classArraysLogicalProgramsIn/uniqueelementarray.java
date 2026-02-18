@@ -2,7 +2,7 @@ package classArraysLogicalProgramsIn;
 
 public class uniqueelementarray {
 	public static void main(String[] args) {
-		int[] arr= {4,2,7,2,5,4,9};
+		int[] arr= {4,2,7,2,5,9};
 		//iterate
 		for (int i = 0; i < arr.length; i++) {
 			boolean duplicate=false;
@@ -17,8 +17,7 @@ public class uniqueelementarray {
 			if(!duplicate)
 			{
 				System.out.print(arr[i]+" ");
-			}
-			
-	}
+			}	
+	    }
 	}
 }
