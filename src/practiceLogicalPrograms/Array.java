@@ -26,7 +26,6 @@ public class Array {
 			arr[i]=arr[i-1]+arr[i-2];
 		}
 		
-		
 		for(int i:arr) {
 			System.out.print(i+" ");
 		}

@@ -17,7 +17,8 @@ public class RotateArrayofGivenSize {
 		// TODO Auto-generated method stub
 		int arr[]= {1,2,3,4,5,6};
 		int n = arr.length;
-		int k = 3;
+		int l=0;
+		int k = l+(n-l)/2;
 		reverse(arr,0,n-1);
 		reverse(arr,0,k-1);
 		reverse(arr,k,n-1);

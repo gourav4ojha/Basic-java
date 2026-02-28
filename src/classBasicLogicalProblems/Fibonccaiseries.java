@@ -15,9 +15,8 @@ public static void main(String[] args) {
 		System.out.print(firstnumber+" ");
 		int thirdnumber=firstnumber+secondnumber;
 		firstnumber=secondnumber;
-		secondnumber=thirdnumber;
-		sc.close();
-		
+		secondnumber=thirdnumber;		
 	}
+	sc.close();
 }
 }

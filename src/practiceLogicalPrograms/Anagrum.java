@@ -23,7 +23,28 @@ public class Anagrum {
         }
         System.out.println("armstrong");
         
-        
 	}
+	
+	public static boolean areAnagrams(String str1, String str2) {
+        // Remove spaces and convert to lowercase for case-insensitive comparison
+        String s1 = str1.replaceAll("\\s", "").toLowerCase();
+        String s2 = str2.replaceAll("\\s", "").toLowerCase();
+
+        // Check if length is the same
+        if (s1.length() != s2.length()) {
+            return false;
+        }
+
+        // Convert strings to character arrays
+        char[] ch1 = s1.toCharArray();
+        char[] ch2 = s2.toCharArray();
+
+        // Sort the character arrays
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
+
+        // Compare the sorted arrays
+        return Arrays.equals(ch1, ch2);
+    }
 
 }

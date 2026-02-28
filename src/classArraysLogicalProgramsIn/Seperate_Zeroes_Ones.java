@@ -11,7 +11,6 @@ public class Seperate_Zeroes_Ones {
 		for (int i = 0; i < a.length; i++) {
 			if(a[i]==0) {
 				a[cnt++] = 0;
-				
 			}
 		}
 		for (int i = cnt; i < a.length; i++) {

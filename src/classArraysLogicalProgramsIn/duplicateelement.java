@@ -16,7 +16,6 @@ public class duplicateelement {
 //		}
 		
 		Arrays.sort(arr);
-		int arr2[]= new int[arr.length-1];
 		int j= arr[0];
 		System.out.println(j);
 		for(int i=0; i<arr.length; i++) {

@@ -22,5 +22,4 @@ public class ProductOfArrayExcaptSelf {
         }
         return result;
     }
-
 }
